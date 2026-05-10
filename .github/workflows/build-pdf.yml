@@ -28,10 +28,10 @@ jobs:
       - name: Move PDF
         run: |
           mkdir -p pdfs
-          cp tex/main.pdf pdfs/main.pdf
+          cp tex/Chomsky1956.pdf pdfs/Chomsky.pdf
 
       - name: Commit PDF
         uses: EndBug/add-and-commit@v9
         with:
-          add: "pdfs/main.pdf"
+          add: "pdfs/Chomsky1956.pdf"
           message: "Update compiled PDF"
