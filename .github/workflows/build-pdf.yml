@@ -22,7 +22,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: tex/Chomsky1956
-          root_file: Chomsky1956_intro.tex
+          root_file: 
+            Chomsky1956_intro.tex
+            Chomsky1956_2.4.tex
           args: -pdfdvi -latexoption=-interaction=nonstopmode -latexoption=-halt-on-error -latexoption=-file-line-error
 
       - name: Move PDF
