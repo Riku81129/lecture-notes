@@ -3,11 +3,10 @@
 スライドは授業ごとに分けますが, ノートのファイルは一つにまとめ, その都度更新していきます.
 
 
-スライド
+<h2>slides</h2>
 
-[第3回(4/24)](pdfs/Chomsky1956/Chomsky1956_intro.pdf) 最終更新 : 2026/05/10
-
-[第5回(5/8)](pdfs/Chomsky1956/Chomsky1956_2.4.pdf) 最終更新 : 2026/05/10
+[第3回(4/24)](pdfs/Chomsky1956/Chomsky1956_intro.pdf) 最終更新 : 2026/05/10<br>
+[第5回(5/8)](pdfs/Chomsky1956/Chomsky1956_2.4.pdf) 最終更新 : 2026/05/10<br>
 
 
 
