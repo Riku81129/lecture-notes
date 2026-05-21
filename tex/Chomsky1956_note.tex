@@ -1,0 +1,163 @@
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage[linguistics]{forest}
+
+
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{url}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{ulem}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{varwidth} 
+\tcbuselibrary{skins,breakable}
+\usepackage[framemethod=tikz]{mdframed}
+
+\newcommand{\N}{\mathbb{N}}%自然数
+\newcommand{\Z}{\mathbb{Z}}%整数
+\newcommand{\Q}{\mathbb{Q}}%有理数
+\newcommand{\R}{\mathbb{R}}%実数
+\newcommand{\C}{\mathbb{C}}%複素数
+
+\newcommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\rank}{\operatorname{rank}}
+
+\newtcolorbox{dfn}[2][]{%
+enhanced,
+title={#2},
+fonttitle=\bfseries,
+colback=cyan!5,
+colframe=cyan!50!black,
+sharp corners=northwest,
+% --- ここからタイトルの見た目調整 ---
+attach boxed title to top left={%
+xshift=0mm, % 
+yshift*=-0.5mm % 
+},
+varwidth boxed title*=-3mm,
+boxed title style={%
+colback=cyan!50!black,
+colframe=cyan!50!black,
+rounded corners,
+sharp corners=south,
+boxrule=0.5pt,
+},
+#1
+}
+
+
+\newtcolorbox{thm}[2][]{%
+enhanced,
+title={#2},
+fonttitle=\bfseries,
+colback=green!5,
+colframe=green!50!black,
+sharp corners=northwest,
+% --- ここからタイトルの見た目調整 ---
+attach boxed title to top left={%
+xshift=0mm, % 左端から少し内側
+yshift*=-0.5mm % 枠線に半分かぶせる
+},
+varwidth boxed title*=-3mm, % タイトルの幅に合わせた小さい箱
+boxed title style={%
+colback=green!50!black,
+colframe=green!50!black,
+rounded corners,
+sharp corners=south,
+boxrule=0.5pt,
+},
+#1
+}
+
+\newtcolorbox{lem}[2][]{%
+enhanced,
+title={#2},
+fonttitle=\bfseries,
+colback=blue!5,
+colframe=blue!50!black,
+sharp corners=northwest,
+% --- ここからタイトルの見た目調整 ---
+attach boxed title to top left={%
+xshift=0mm, % 左端から少し内側
+yshift*=-0.5mm % 枠線に半分かぶせる
+},
+varwidth boxed title*=-3mm, % タイトルの幅に合わせた小さい箱
+boxed title style={%
+colback=blue!50!black,
+colframe=blue!50!black,
+rounded corners,
+sharp corners=south,
+boxrule=0.5pt,
+},
+% --- ここまで ---
+#1
+}
+
+\newtcolorbox{ex}[2][]{%
+enhanced,
+title={#2},
+fonttitle=\bfseries,
+colback=violet!5,
+colframe=violet!50!black,
+sharp corners=northwest,
+% --- ここからタイトルの見た目調整 ---
+attach boxed title to top left={%
+xshift=0mm, % 左端から少し内側
+yshift*=-0.5mm 
+},
+varwidth boxed title*=-3mm, % タイトルの幅に合わせた小さい箱
+boxed title style={%
+colback=violet!50!black,
+colframe=violet!50!black,
+rounded corners,
+sharp corners=south,
+boxrule=0.5pt,
+},
+#1
+}
+
+\newtcolorbox{marker}{
+enhanced,
+colback=yellow!20,
+colframe=yellow!40!black,
+boxrule=0.4pt,
+left=8mm,
+overlay={
+% 左の!帯
+\fill[brown!80!black] (frame.north west) rectangle ([xshift=6mm]frame.south west);
+\node[white,font=\bfseries\Large] at ([xshift=3mm]frame.west) {!};
+% 右下折れ曲がり
+\fill[yellow!70!white]
+(frame.south east) -- ++(-6mm,0) -- ++(6mm,6mm) -- cycle;
+},
+drop shadow,
+}
+
+\begin{document}
+\begin{center}
+{\Large \textbf{Chomsky (1956) を読む}}\par
+\vspace{0.5em}
+荒木 理求\par
+\texttt{araki-riku@ed.tmu.ac.jp}\par
+\today
+\end{center}
+
+\begin{thebibliography}{99}
+\bibitem{Kaneko2016}
+金子義雅・中村捷・原口庄輔（編著） (2016). 『増補版 チョムスキー理論辞典』研究社.
+\bibitem{Chomsky1956}
+Noam Chomsky (1956) ``Three models for the description of language'', MIT.
+\end{thebibliography}
+\end{document}
