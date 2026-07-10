@@ -9,6 +9,6 @@
 [第5回(5/8)](pdfs/Chomsky1956/Chomsky1956_2.4.pdf) 最終更新 : 2026/05/10<br>
 [第8回(5/29)](pdfs/Chomsky1956/Chomsky1956_3.5.pdf) 最終更新 : 2026/5/29<br>
 [第10回(6/12)](pdfs/Chomsky1956/Chomsky1956_5.1.pdf) 最終更新 : 2026/6/12<br>
-[第12回(7/3)](pdfs/Chomsky1956/Chomsky1957_S5.3.pdf) 最終更新 : 2026/7/3
+[第12回(7/3)](pdfs/Chomsky1956/Chomsky1956_S5.3.pdf) 最終更新 : 2026/7/3
 
 
